@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",       // Compiled files will go here
+    "rootDir": "./",           // Root directory is the project root
+    "strict": true,            // Enable strict type-checking
+    "module": "commonjs",      // Module system
+    "target": "es6",           // ECMAScript target version
+    "esModuleInterop": true,   // Allow default imports from CommonJS modules
+    "skipLibCheck": true       // Skip checking of library declaration files
+  },
+  "include": ["**/*.ts", "models/typeDefs.js"],      // Include all TypeScript files in the project
+  "exclude": ["node_modules"]  // Exclude dependencies and output folder
+}

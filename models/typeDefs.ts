@@ -1,6 +1,6 @@
-const gql = require("graphql-tag");
+import gql from "graphql-tag";
 
-const typeDefs = gql`
+export const typeDefs = gql`
   type Query {
     hello: String
     welcome(name: String): String
@@ -19,5 +19,3 @@ const typeDefs = gql`
     delete(id: ID): User
   }
 `;
-
-module.exports = { typeDefs };
